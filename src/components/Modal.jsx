@@ -70,11 +70,23 @@ function Modal({
   return (
     <>
       <div className="absolute bg-black bg-opacity-80 w-full h-full"></div>
-      <form className=" rounded-xl bg-white shadow p-5 px-8 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <form className=" 
+      rounded-xl 
+      bg-white 
+      shadow w-full 
+      md:w-auto p-5 
+      md:px-8 
+      absolute 
+      top-1/2 
+      left-1/2 
+      transform 
+      -translate-x-1/2 
+      -translate-y-1/2">
         <p
           className="text-gray-800 font-bold text-right mb-3 text-2xl cursor-pointer hover:text-gray-700"
           onClick={() => {
             setModal(false);
+            setMedicamento({})
           }}
         >
           X
